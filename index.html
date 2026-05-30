@@ -3,57 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RWAlpha Whitepaper</title>
+<title>RWAlpha Whitepaper Hub</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0D1117;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:40px 16px;}
-h1{font-size:28px;color:#C9A84C;margin-bottom:8px;letter-spacing:.02em;}
-p{color:#8B949E;margin-bottom:48px;font-size:14px;}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:680px;width:100%;}
-.grid a:last-child:nth-child(odd){grid-column:1/-1;max-width:calc(50% - 8px);margin:0 auto;}
-a{display:block;background:#161B22;border:1px solid #30363D;border-radius:12px;padding:24px 28px;text-decoration:none;color:#fff;transition:border-color .2s;}
-a:hover{border-color:#C9A84C;}
-.tag{font-size:10px;color:#C9A84C;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;}
-.tag span{background:#C9A84C22;border-radius:4px;padding:2px 7px;}
-.name{font-size:17px;font-weight:600;margin-bottom:6px;}
-.desc{font-size:12px;color:#8B949E;line-height:1.5;}
-.badge{display:inline-block;font-size:10px;background:#1C2128;border:1px solid #30363D;border-radius:4px;padding:2px 7px;margin-top:10px;color:#8B949E;}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0D1117; color: #C9D1D9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; }
+  .header { background: #0D1117; border-bottom: 1px solid #21262D; padding: 20px 40px; display: flex; align-items: center; gap: 12px; }
+  .header .logo-mark { width: 32px; height: 32px; background: #00C6A2; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 900; color: #0D1117; font-size: 16px; }
+  .header h1 { font-size: 18px; font-weight: 700; color: #fff; }
+  .header span { color: #8B949E; font-size: 14px; }
+  .container { max-width: 900px; margin: 0 auto; padding: 48px 24px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #00C6A2; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-bottom: 40px; }
+  .card { background: #161B22; border: 1px solid #21262D; border-radius: 10px; padding: 20px; text-decoration: none; color: inherit; transition: border-color 0.2s, background 0.2s; display: block; }
+  .card:hover { border-color: #00C6A2; background: #1C2128; }
+  .card .tag { font-size: 11px; font-weight: 600; color: #00C6A2; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .card h3 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+  .card p { font-size: 12px; color: #8B949E; line-height: 1.5; }
+  .card .lang { display: inline-block; margin-top: 12px; font-size: 11px; padding: 3px 8px; border-radius: 4px; background: #21262D; color: #C9D1D9; }
+  .footer { text-align: center; color: #8B949E; font-size: 12px; padding: 32px; border-top: 1px solid #21262D; margin-top: 40px; }
 </style>
 </head>
 <body>
-<h1>RWAlpha Whitepaper</h1>
-<p>Official product documentation &amp; research reports</p>
-<div class="grid">
-  <a href="rAI_Whitepaper_EN.pdf" target="_blank">
-    <div class="tag"><span>rAI</span> &nbsp;English</div>
-    <div class="name">rAI Whitepaper</div>
-    <div class="desc">AI-driven structured yield product backed by NASDAQ-100 covered call ETFs</div>
-    <div class="badge">PDF</div>
-  </a>
-  <a href="rSTR_Whitepaper_EN.pdf" target="_blank">
-    <div class="tag"><span>rSTR</span> &nbsp;English</div>
-    <div class="name">rSTR Whitepaper</div>
-    <div class="desc">Dividend RWA Token backed by STRC perpetual preferred stock</div>
-    <div class="badge">PDF</div>
-  </a>
-  <a href="rSTR_Whitepaper_CN.pdf" target="_blank">
-    <div class="tag"><span>rSTR</span> &nbsp;中文</div>
-    <div class="name">rSTR 白皮书</div>
-    <div class="desc">基于 STRC 永续优先股的分红型 RWA 代币</div>
-    <div class="badge">PDF</div>
-  </a>
-  <a href="rGold_whitepaper_final.html" target="_blank">
-    <div class="tag"><span>rGLD</span> &nbsp;中文</div>
-    <div class="name">rGold 白皮书</div>
-    <div class="desc">黄金抵押贷款收益增强型 RWA 产品</div>
-    <div class="badge">HTML</div>
-  </a>
-  <a href="QCDMMFPresentation-Mar2026.pdf" target="_blank">
-    <div class="tag"><span>QCDMMF</span> &nbsp;English</div>
-    <div class="name">QCDMMF Presentation</div>
-    <div class="desc">Quantitative Crypto Dollar Money Market Fund — Mar 2026</div>
-    <div class="badge">PDF</div>
-  </a>
+<div class="header">
+  <div class="logo-mark">R</div>
+  <div>
+    <h1>RWAlpha</h1>
+    <span>Whitepaper Hub</span>
+  </div>
 </div>
+<div class="container">
+  <div class="section-title">综合产品白皮书 · Combined Whitepaper</div>
+  <div class="grid">
+    <a class="card" href="RWAlpha_Products_Whitepaper_CN.pdf" target="_blank">
+      <div class="tag">rAI · rAIX · rSTR</div>
+      <h3>RWAlpha 结构化 RWA 产品矩阵</h3>
+      <p>涵盖三款核心产品的综合白皮书，含智能合约地址</p>
+      <span class="lang">中文版</span>
+    </a>
+    <a class="card" href="RWAlpha_Products_Whitepaper_EN.pdf" target="_blank">
+      <div class="tag">rAI · rAIX · rSTR</div>
+      <h3>RWAlpha Structured RWA Product Matrix</h3>
+      <p>Comprehensive whitepaper covering all three core products with contract addresses</p>
+      <span class="lang">English</span>
+    </a>
+  </div>
+
+  <div class="section-title">单产品白皮书 · Individual Whitepapers</div>
+  <div class="grid">
+    <a class="card" href="rAI_Whitepaper_CN_Pro.pdf" target="_blank">
+      <div class="tag">rAI</div>
+      <h3>rAI 产品白皮书</h3>
+      <p>结构化收益型 RWA 代币 · 目标年化 13–16%</p>
+      <span class="lang">中文版</span>
+    </a>
+    <a class="card" href="rAI_Whitepaper_EN.pdf" target="_blank">
+      <div class="tag">rAI</div>
+      <h3>rAI Product Whitepaper</h3>
+      <p>Structured Yield RWA Token · Target 13–16% p.a.</p>
+      <span class="lang">English</span>
+    </a>
+    <a class="card" href="rSTR_Whitepaper_CN.pdf" target="_blank">
+      <div class="tag">rSTR</div>
+      <h3>rSTR 产品白皮书</h3>
+      <p>Dividend RWA Token · MicroStrategy 永续优先股</p>
+      <span class="lang">中文版</span>
+    </a>
+    <a class="card" href="rSTR_Whitepaper_EN.pdf" target="_blank">
+      <div class="tag">rSTR</div>
+      <h3>rSTR Product Whitepaper</h3>
+      <p>Dividend RWA Token · MicroStrategy Perpetual Preferred</p>
+      <span class="lang">English</span>
+    </a>
+    <a class="card" href="rGold_whitepaper_final.html" target="_blank">
+      <div class="tag">rGold</div>
+      <h3>rGold 产品白皮书</h3>
+      <p>黄金抵押贷款 RWA 代币</p>
+      <span class="lang">中文版</span>
+    </a>
+    <a class="card" href="QCDMMFPresentation-Mar2026.pdf" target="_blank">
+      <div class="tag">QCDMMF</div>
+      <h3>QCDMMF Presentation</h3>
+      <p>Mar 2026 Investor Presentation</p>
+      <span class="lang">English</span>
+    </a>
+  </div>
+</div>
+<div class="footer">© 2026 RWAlpha · Onchain GP Limited · rwaai.github.io/whitepaper</div>
 </body>
 </html>
